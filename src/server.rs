@@ -67,7 +67,7 @@ impl Server {
             if headers.route == route.0 {
                 let response = (route.2)(
                         Request::new_with_params(params.clone(), headers, session)
-                    ); // Clonar headers
+                    );
                 fn_response = response;
 
                 break;
